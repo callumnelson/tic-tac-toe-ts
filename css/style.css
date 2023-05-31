@@ -1,0 +1,144 @@
+body {
+  background-color: white;
+	/* Use a system font, if none are available use an available sans-sarif   font */
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ttt-title {
+  font-size: 50px;
+  margin: 0;
+  color:rgb(98, 182, 228)
+}
+
+#game-wrapper {
+  display: flex;
+}
+
+hr {
+  min-height: 100%;
+  max-height: 100vh;
+  margin: 0 20px;
+}
+
+#scoreboard-wrapper, #board-wrapper, #settings-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+}
+
+div.score {
+  margin: 10px 0;
+  height: 10vmin;
+  justify-content: center;
+  width: 20vmin;
+}
+
+div.setting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  width: 20vmin;
+  height: 30vmin;
+}
+
+.score p {
+  font-size: 2.5vmin;
+  font-style: italic;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.score h1 {
+  text-align: center;
+  font-size: 5vmin;
+  margin: 10px 0;
+}
+
+section.board {
+  display: grid;
+  grid-template-rows: repeat(3, 10vmin);
+  grid-template-columns: repeat(3, 10vmin);
+  grid-gap: 0vmin;
+}
+
+section.board:hover {
+  cursor: pointer;
+}
+
+.sqr {
+  border: 1px solid black;
+  font-size: 8vmin;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sqr:hover {
+  background-color: rgb(226, 242, 248);
+}
+
+#reset-game-button {
+  background-color: rgb(0, 100, 12);
+}
+
+#reset-score-button {
+  background-color: rgb(45, 111, 147);
+}
+
+#save-settings-button {
+  background-color: rgb(87, 0, 119);
+}
+
+#reset-settings-button {
+  background-color: rgb(75, 75, 75);
+}
+
+label {
+  font-size: 2.5vmin;
+}
+
+input {
+  padding: 1.5vmin;
+  margin: 1.5vmin;
+  font-size: 2vmin;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 10px;
+  text-align: center;
+  width: 15vmin;
+}
+
+select {
+  padding: 1.5vmin;
+  margin: 1.5vmin;
+  font-size: 2.5vmin;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 10px;
+  text-align: center;
+  width: 15vmin;
+}
+
+button {
+  padding: 1.5vmin;
+  margin: 1.5vmin;
+  font-size: 2vmin;
+  color: white;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 10px;
+}
+
+button:hover {
+  color: rgb(213, 213, 213);
+  background-color: rgb(141, 179, 200);
+  cursor: pointer;
+}

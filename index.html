@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<!--Favicon source: https://imgur.com/gallery/91eVH7H-->
+	<link rel="icon" href="./favicon.ico" />
+	<script defer src="./js/app.js"></script>
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+	<h1 id="ttt-title">Tic-Tac-Toe</h1>
+	<h2 id="message">Message</h2>
+ 
+	<div id="game-wrapper">
+		<div id="settings-wrapper">
+			<section class="settings">
+				<div class="setting">
+					<label for="p1-name-input">Player 1 name:</label>
+					<input id="p1-name-input" type="text" placeholder="e.g. Player X" required value="Player X"/>
+					<label for="p1-icon-select">Select an icon:</label>
+					<select id="p1-icon-select">
+						<option selected>X</option>
+						<option>😄</option>
+						<option>💗</option>
+					</select>
+				</div>
+				<div class="setting">
+					<label for="p2-name-input">Player 2 name:</label>
+					<input id="p2-name-input" type="text" placeholder="e.g. Player O" required value="Player O"/>
+					<label for="p2-icon-select">Select an icon:</label>
+					<select id="p2-icon-select">
+						<option value="O" selected>O</option>
+						<option>🗼</option>
+						<option>🦁</option>
+					</select>
+				</div>
+			</section>
+			<section>
+				<button id="save-settings-button">Save Settings</button>
+				<button id="reset-settings-button">Reset Settings</button>
+			</section>	
+		</div>
+		<hr />
+		<div id="board-wrapper">
+			<section class="board">
+				<div class="sqr" id="sq0"></div>
+				<div class="sqr" id="sq1"></div>
+				<div class="sqr" id="sq2"></div>
+				<div class="sqr" id="sq3"></div>
+				<div class="sqr" id="sq4"></div>
+				<div class="sqr" id="sq5"></div>
+				<div class="sqr" id="sq6"></div>
+				<div class="sqr" id="sq7"></div>
+				<div class="sqr" id="sq8"></div> 
+			</section>
+			<section>
+				<button id="reset-game-button">Reset Game</button>
+			</section>	
+		</div>
+	</div>
+	<div id="scoreboard-wrapper">
+		<section class="scoreboard">
+			<div class="score">
+				<p id="p1-score-header">Player X Wins:</p>
+				<h1 id="p1-score">0</h1>
+			</div>
+			<div class="score">
+				<p id="p2-score-header">Player O Wins:</p>
+				<h1 id="p2-score">0</h1>
+			</div>
+		</section>
+		<section>
+			<button id="reset-score-button">Reset Scoreboard</button>
+		</section>	
+	</div>
+
+</body>
+</html>
