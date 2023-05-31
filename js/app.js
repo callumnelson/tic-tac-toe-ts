@@ -43,7 +43,7 @@ resetSettingsBtnEl?.addEventListener('click', handleSettingsReset);
 /*-------------------------------- Functions --------------------------------*/
 //Event listeners
 function handleClick(evt) {
-    if (!evt.target)
+    if (!(evt.target instanceof HTMLElement))
         return;
     const clickedEl = evt.target;
     let clickedClass = clickedEl.className;

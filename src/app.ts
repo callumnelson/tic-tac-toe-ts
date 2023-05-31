@@ -51,7 +51,7 @@ resetSettingsBtnEl?.addEventListener('click', handleSettingsReset)
 
 //Event listeners
 function handleClick(evt: MouseEvent): void {
-  if (!evt.target) return
+  if (!(evt.target instanceof HTMLElement)) return
   const clickedEl = evt.target as HTMLDivElement
 
   let clickedClass = clickedEl.className  
