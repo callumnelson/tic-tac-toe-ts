@@ -45,12 +45,11 @@ resetSettingsBtnEl?.addEventListener('click', handleSettingsReset);
 function handleClick(evt) {
     if (!(evt.target instanceof HTMLElement))
         return;
-    const clickedEl = evt.target;
-    let clickedClass = clickedEl.className;
+    let clickedClass = evt.target.className;
     if (clickedClass !== 'sqr')
         return;
     //Extract index and convert to integer
-    let sqIdx = parseInt(clickedEl.id.replace('sq', ''));
+    let sqIdx = parseInt(evt.target.id.replace('sq', ''));
     if (board[sqIdx] || winner)
         return;
     placePiece(sqIdx);
